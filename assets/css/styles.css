@@ -423,6 +423,14 @@ img {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .home__img {
+    width: 200px;
+    bottom: 15%;
+  }
+
+}
+
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
@@ -442,7 +450,7 @@ img {
 
   .home__img {
     width: 300px;
-    bottom: 25%;
+    bottom: 30%;
   }
 
   .about__container {
