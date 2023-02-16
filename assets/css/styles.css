@@ -363,6 +363,102 @@ img {
   transform: scale(1.1);
 }
 
+.title-text {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.title-text p {
+  margin: auto;
+  color: #009688;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.title-text p::after {
+  content: "";
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(#019587, #fff);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(10deg);
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.title-text h1 {
+  font-size: 50px;
+}
+
+.feature-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+#testimonial {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.testimonial-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.testimonial-col {
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 3px #00968814;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.testimonial-col p {
+  font-size: 14px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.user img {
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.user-info .fa {
+  margin-left: 10px;
+  color: #27c0ff;
+  font-size: 20px;
+}
+
+.user-info small {
+  color: #009688;
+}
+
+.testimonial-col:hover {
+  transform: translateY(-7px);
+}
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -427,6 +523,10 @@ img {
   .home__img {
     width: 260px;
     bottom: 15%;
+  }
+
+  .testimonial-col {
+    flex-basis: 100%;
   }
 
 }
